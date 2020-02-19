@@ -1,0 +1,76 @@
+
+    /* default formatting for the app*/
+    html {
+        font-size: 62.5%;
+        box-sizing: border-box; /*make a border box */
+        /* put background color on the background of the calculator or the website screen*/
+        background-color: whitesmoke; /* background color of the web app */
+    }
+    
+    /* apply to all - styling */
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+    
+    /*placement of the calculator on the web page */
+    .calculator {
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%; /*placement of the calculator */
+        left: 50%;
+        transform: translate(-50%, -50%); /*to make the calculator center on the page*/
+        width: 370px;
+        background-color: lightsteelblue; /*put background color on the calculator itself */
+    }
+    
+    /*styling for the output screen */
+    .calculator-screen {
+        width: 100%;
+        height: 100%;
+        font-size: 5rem; /*sizing of the default number - 0 */
+        height: 85px; /* height of the output screen */
+        border: none;
+        text-align: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        
+    }
+    
+    button { 
+        height: 81px;/*make the height of the calculator taller */
+        border-radius: 10px; /*to define the buttons - make it rounder */
+        border: 2px solid gray;   /* put border on the button to make the spacing and the buttons more vivid */
+        background-color: orange;
+        font-size: 3rem;
+        font-weight: bold;  
+    }
+    
+    button:hover {
+        background-color: whitesmoke;
+    }
+    
+    .operator {
+        background-color: lavender;    
+    }
+    
+    .equal-sign {
+        height: 100%;
+        grid-area: 2 / 4 / 6 / 5; /*placement of the equal sign using the grid-area*/
+        background-color: lightgoldenrodyellow;
+    }
+    
+    .clear {
+        background-color: salmon;
+    }
+    
+    .calculator-digits {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /*placement of the numbers and operators and signs in the grid*/
+        grid-gap: 9px; /* the gap or space between the digits*/
+        padding: 10px;
+    }
