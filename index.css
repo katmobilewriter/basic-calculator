@@ -21,7 +21,7 @@
         border: 1px solid gray;
         border-radius: 5px;
         position: absolute;
-        top: 60%; /*placement of the calculator */
+        top: 55%; /*placement of the calculator */
         left: 50%;
         transform: translate(-50%, -50%); /*to make the calculator center on the page*/
         width: 370px;
